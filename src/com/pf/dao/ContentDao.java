@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Transactional
 @Repository
-public class MemberDao {
+public class ContentDao {
 
 }

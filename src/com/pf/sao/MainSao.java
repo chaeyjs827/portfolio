@@ -6,14 +6,9 @@ import org.springframework.stereotype.Service;
 import com.pf.dao.MainDao;
 
 @Service
-public class MemberSao {
+public class MainSao {
 
 	@Autowired
-	MainDao memberDao;
-	
-	public void testSao() {
-		memberDao.testDao();
-	}
-	
+	MainDao mainDao;
 	
 }
