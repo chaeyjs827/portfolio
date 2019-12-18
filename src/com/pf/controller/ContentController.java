@@ -18,11 +18,12 @@ public class ContentController extends Content{
 	@SuppressWarnings("unchecked")
 	@Override
 	public ModelAndView contentRead(Integer contentIndex, HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("json");
-		System.out.println(contentIndex);
-		JSONObject jsonObj = new JSONObject();
-		jsonObj.put("testValue", "Hello");
-		mav.addObject(jsonObj);
+		ModelAndView mav = new ModelAndView();
+//		ModelAndView mav = new ModelAndView("json");
+//		System.out.println(contentIndex);
+//		JSONObject jsonObj = new JSONObject();
+//		jsonObj.put("testValue", "Hello");
+//		mav.addObject(jsonObj);
 		return mav;
 	}
 	
