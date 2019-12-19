@@ -14,4 +14,9 @@
 	<definition name="legacyIndexMain" extends="legacyLayout">
 		<put-attribute name="content" value="/WEB-INF/views/template/legacy/content/legacyIndexMain.jsp"/>
 	</definition>
+	
+	<!-- temporary Index -->
+	<definition name="temporaryIndex" template="/WEB-INF/views/template/legacy/content/legacyIndexMain.jsp">
+<!-- 		<put-attribute name="content" value="/WEB-INF/views/template/legacy/content/legacyIndexMain.jsp"/> -->
+	</definition>
 </tiles-definitions>
