@@ -8,10 +8,19 @@
 	<definition name="legacyLayout" template="/WEB-INF/views/template/legacy/layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/template/legacy/header.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/views/template/legacy/footer.jsp"/>
+		<put-attribute name="loader" value="/WEB-INF/views/template/legacy/content/loader.jsp"/>
 	</definition>
 
 	<!-- Index Main Page -->
 	<definition name="legacyIndexMain" extends="legacyLayout">
-		<put-attribute name="content" value="/WEB-INF/views/template/legacy/content/legacyIndexMain.jsp"/>
+		<put-attribute name="navigation" value="/WEB-INF/views/template/legacy/content/navigation.jsp"/>
+		<put-attribute name="about" value="/WEB-INF/views/template/legacy/content/about.jsp"/>
+		<put-attribute name="resume" value="/WEB-INF/views/template/legacy/content/resume.jsp"/>
+		<put-attribute name="projects" value="/WEB-INF/views/template/legacy/content/projects.jsp"/>
+		<put-attribute name="summary" value="/WEB-INF/views/template/legacy/content/summary.jsp"/>
+		<put-attribute name="sns" value="/WEB-INF/views/template/legacy/content/sns.jsp"/>
+		<put-attribute name="contact" value="/WEB-INF/views/template/legacy/content/contact.jsp"/>
+<!-- 		<put-attribute name="partners" value="/WEB-INF/views/template/legacy/content/partners.jsp"/> -->
+<!-- 		<put-attribute name="services" value="/WEB-INF/views/template/legacy/content/services.jsp"/> -->
 	</definition>
 </tiles-definitions>

@@ -16,7 +16,7 @@ public class MainController extends Main {
 	
 	@Override
 	public ModelAndView indexMain(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("legacyLayout");
+		ModelAndView mav = new ModelAndView("legacyIndexMain");
 		memberSao.testSao();
 		return mav;
 	}
