@@ -7,12 +7,10 @@
 			class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 				<div class="text text-center">
-					<span class="subheading">Hey! I am</span>
-					<h1>Ronaldo Fredrickson</h1>
-					<h2>
-						I'm a <span class="txt-rotate" data-period="2000"
-							data-rotate='[ "Web Designer.", "Developer.", "Photographer.", "Marketer.", "Blogger" ]'></span>
-					</h2>
+					<span class="subheading">Hey! Wandering world </span>
+					<h1>Young-Jun CHAE</h1>
+<!-- 					<h1>&nbsp;&nbsp;채&nbsp;&nbsp;&nbsp;&nbsp;영&nbsp;&nbsp;&nbsp;&nbsp;준 </h1> -->
+<!-- 					<h1>&nbsp;&nbsp;蔡&nbsp;&nbsp;&nbsp;&nbsp;榮&nbsp;&nbsp;&nbsp;&nbsp;俊</h1> -->
 				</div>
 			</div>
 		</div>
@@ -33,9 +31,9 @@
 			<div class="col-md-6 col-lg-6 d-flex">
 				<div class="img-about img d-flex align-items-stretch">
 					<div class="overlay"></div>
-					<div class="img d-flex align-self-stretch align-items-center"
-						style="background-image: url(/resources/images/about.jpg);">
-					</div>
+<!-- 					<div class="img d-flex align-self-stretch align-items-center" -->
+<!-- 						style="background-image: url(/resources/images/about.jpg);"> -->
+<!-- 					</div> -->
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-6 pl-md-5 py-5">

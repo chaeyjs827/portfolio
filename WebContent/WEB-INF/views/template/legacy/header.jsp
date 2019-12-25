@@ -2,7 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 
-<title>Wandering Jun's portfolio</title>
+<!-- <title>Wandering Jun's portfolio</title> -->
+<title>https://www.mangot5.com/resource/renewalJS/</title>
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
