@@ -27,3 +27,5 @@
 <!--     <link rel="stylesheet" href="/resources/css/flaticon.css"> -->
 <link rel="stylesheet" href="/resources/css/icomoon.css">
 <link rel="stylesheet" href="/resources/css/style.css">
+
+<script src="/resources/js/jquery.min.js"></script>

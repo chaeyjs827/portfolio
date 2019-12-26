@@ -20,6 +20,17 @@ public class WebConfig implements WebMvcConfigurer{
 		return tilesConfigurer;
 	}
 	
+//	@Bean
+//	public MappingJackson2JsonView jsonView() {
+//		MappingJackson2JsonView mj2jv = new MappingJackson2JsonView();
+//		mj2jv.setContentType("application/json;charset=UTF-8");
+//		return mj2jv;
+//	}
+//    @Bean
+//    MappingJackson2JsonView jsonView(){
+//        return new MappingJackson2JsonView();
+//    }
+	
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		TilesViewResolver viewResolver = new TilesViewResolver();

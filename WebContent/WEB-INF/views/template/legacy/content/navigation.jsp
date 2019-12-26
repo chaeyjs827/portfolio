@@ -121,15 +121,11 @@ body {
 <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
 
 <div class="form-popup" id="myForm">
-	<form action="/action_page.php" class="form-container">
+	<form id="loginForm" class="form-container">
 		<h1>Login</h1>
-
-		<label for="email"><b>Email</b></label> <input type="text"
-			placeholder="Enter Email" name="email" required> <label
-			for="psw"><b>Password</b></label> <input type="password"
-			placeholder="Enter Password" name="psw" required>
-
-		<button type="submit" class="btn">Login</button>
+		<label for="email"><b>User ID</b></label> <input type="text" placeholder="Enter User ID" name="userID" required> 
+		<label for="psw"><b>Password</b></label> <input type="password" placeholder="Enter Password" name="userPW" required>
+		<button id="loginSubmit" type="button" class="btn">Login</button>
 		<button type="button" class="btn cancel" onclick="loginDivBtn()">Close</button>
 	</form>
 </div>
@@ -144,4 +140,18 @@ body {
 // 			document.getElementById("navLoginBtn").childNodes[0].innerHTML = 'hoho'
 		}
 	}
+	
+	$(function() {
+		$("#loginSubmit").on("click", function() {
+			var query = $("#loginForm").serialize()
+			console.log(query)
+			$.ajax({
+				url : "/Index/Member/LoginJSON?"+query,
+				type : "POST",
+				success : function(data) {
+					console.log(data)
+				}
+			})
+		})
+	})
 </script>
