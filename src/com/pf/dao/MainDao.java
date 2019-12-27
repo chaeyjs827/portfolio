@@ -1,13 +1,13 @@
 package com.pf.dao;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
-
-import com.pf.data.model.Member;
 
 @Transactional
 @Repository
@@ -16,11 +16,16 @@ public class MainDao {
 	@PersistenceContext
 	EntityManager entityManager;
 	
-	public void testDao() {
-		Member member = new Member();
-		member.setUserNickname("sleepy");
+	public Map<String, Object> testDao() {
+		Map<String, Object> returnObj = new HashMap<String, Object>();
+		returnObj.put("returnCode", "1");
+		returnObj.put("returnMsg", "success");
+		return returnObj;
 		
-		Session session = entityManager.unwrap(Session.class);
-		session.save(member);
+//		Member member = new Member();
+//		member.setUserNickname("sleepy");
+//		
+//		Session session = entityManager.unwrap(Session.class);
+//		session.save(member);
 	}
 }

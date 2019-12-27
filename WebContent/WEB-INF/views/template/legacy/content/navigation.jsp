@@ -144,12 +144,16 @@ body {
 	$(function() {
 		$("#loginSubmit").on("click", function() {
 			var query = $("#loginForm").serialize()
-			console.log(query)
 			$.ajax({
 				url : "/Index/Member/LoginJSON?"+query,
 				type : "POST",
 				success : function(data) {
-					console.log(data)
+					console.log(data.jsonObject)
+					if(data.jsonObject.returnCode == 1) {
+						console.log("login success")
+					} else {
+						console.log("login failed")
+					}
 				}
 			})
 		})
