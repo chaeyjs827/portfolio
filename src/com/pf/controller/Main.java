@@ -1,5 +1,7 @@
 package com.pf.controller;
 
+import java.util.Locale;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 public abstract class Main {
 
 	@RequestMapping("/Main")
-	public abstract ModelAndView indexMain(HttpServletRequest request);
+	public abstract ModelAndView indexMain(HttpServletRequest request, Locale locale);
 	
 }
