@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <section class="hero-wrap js-fullheight">
 	<div class="overlay"></div>
 	<div class="container">
@@ -8,6 +9,7 @@
 			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 				<div class="text text-center">
 					<span class="subheading">Hey! Wandering world </span>
+					<span class="subheading"><spring:message code="site.test"/></span>
 					<h1>Young-Jun CHAE</h1>
 <!-- 					<h1>&nbsp;&nbsp;채&nbsp;&nbsp;&nbsp;&nbsp;영&nbsp;&nbsp;&nbsp;&nbsp;준 </h1> -->
 <!-- 					<h1>&nbsp;&nbsp;蔡&nbsp;&nbsp;&nbsp;&nbsp;榮&nbsp;&nbsp;&nbsp;&nbsp;俊</h1> -->
