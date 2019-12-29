@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.json.simple.JSONObject;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -28,14 +29,16 @@ public class ContentController extends Content{
 	}
 	
 	@Override
-	public ModelAndView contentWrite(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView();
+	public ModelAndView contentWriteJSON(@PathVariable String contentName, HttpServletRequest request) {
+		ModelAndView mav = new ModelAndView("jsonView");
+		mav.addObject("contentName", contentName);
 		return mav;
 	}
 	
 	@Override
-	public ModelAndView contentModify(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView();
+	public ModelAndView contentModifyJSON(@PathVariable String contentName, HttpServletRequest request) {
+		ModelAndView mav = new ModelAndView("jsonView");
+		mav.addObject("contentName", contentName);
 		return mav;
 	}
 }

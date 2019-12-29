@@ -15,11 +15,11 @@ public abstract class Content {
 	@RequestMapping(value = {"/Content/Read/{contentIndex}"})
 	public abstract ModelAndView contentRead(@PathVariable Integer contentIndex, HttpServletRequest request);
 	
-	@RequestMapping(value = {"/Content/Write"})
-	public abstract ModelAndView contentWrite(HttpServletRequest request);
+	@RequestMapping(value = {"/Content/WriteJSON/{contentName}"})
+	public abstract ModelAndView contentWriteJSON(@PathVariable String contentName, HttpServletRequest request);
 	
-	@RequestMapping(value = {"/Content/Modify"})
-	public abstract ModelAndView contentModify(HttpServletRequest requset);
+	@RequestMapping(value = {"/Content/ModifyJSON/{contentName}"})
+	public abstract ModelAndView contentModifyJSON(@PathVariable String contentName, HttpServletRequest requset);
 	
 	
 }

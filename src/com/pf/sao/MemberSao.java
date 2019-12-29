@@ -5,13 +5,13 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pf.dao.MainDao;
+import com.pf.dao.MemberDao;
 
 @Service
 public class MemberSao {
 
 	@Autowired
-	MainDao memberDao;
+	MemberDao memberDao;
 	
 	public Map<String, Object> testSao() {
 		Map<String, Object> returnObj = memberDao.testDao();
