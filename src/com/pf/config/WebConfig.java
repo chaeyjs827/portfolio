@@ -3,6 +3,7 @@ package com.pf.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -28,10 +29,6 @@ public class WebConfig implements WebMvcConfigurer{
 		return mj2jv;
 	}
 	
-	@Bean
-	public ViewResolver viewResolver() {
-		return new BeanNameViewResolver();
-	}
 	// jsonView 사용_finish
 	
 	
@@ -49,6 +46,7 @@ public class WebConfig implements WebMvcConfigurer{
 		registry.viewResolver(viewResolver);
 	}
 	// tiles 사용_finish
+	
 	
 	// message properties_begin
 	// 메세지 소스 생성
@@ -77,8 +75,25 @@ public class WebConfig implements WebMvcConfigurer{
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(localeChangeInterceptor());
 	}
-
 	// message properties_finish
+
+	
+	// fileupload_begin
+	private final int MAX_SIZE = 10 * 1024 * 1024;
+	@Bean
+	public CommonsMultipartResolver multipartResolver() {
+		CommonsMultipartResolver cmr = new CommonsMultipartResolver();
+		cmr.setMaxUploadSize(MAX_SIZE);
+		cmr.setMaxUploadSizePerFile(MAX_SIZE);
+		cmr.setMaxInMemorySize(0);
+		return cmr;
+	}
+	// fileupload_finish
+	
+	@Bean
+	public ViewResolver viewResolver() {
+		return new BeanNameViewResolver();
+	}
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
