@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 public abstract class Utils {
 
-	@RequestMapping("{/utils/fileupload}")
+	@RequestMapping(value = {"/utils/fileupload"})
 	public abstract ModelAndView fileupload(MultipartHttpServletRequest request);
 	
 }

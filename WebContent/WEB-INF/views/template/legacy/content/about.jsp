@@ -120,24 +120,27 @@
 					formData.append(key, value);
 			});
 			
+			console.log(formData)
+			
 	    	$.ajax({
-	    		url 		: '/utils/fileupload',
+	    		url 		: '/utils/fileupload.json',
 	    		method 		: 'post',
 	    	    contentType	: false,
 	    		data 		: formData,
 	    		processData	: false,
 	    		success 	: function (data, textStatus, jqXhr) {
+	    			console.log(data)
 	    			var errorString = JSON.stringify(jqXhr.responseText);
 // 	    			$("#attachFilePath" + fileIdx).val((data.result.resultCode == '1') ? data.result.fileName : "");
-	    			var returnCode = data.result.resultCode;
-	    			if (returnCode != '1') {
-	    				var resultMsg = data.result.msg;
-	    				if (returnCode == '-1') {
-	    					resultMsg = '請檢查文件類型。';
-	    				}
-	    				alert("["+ returnCode +"] " + resultMsg);
-	    				$("#inquiryFile" + fileIdx).focus();
-	    			}
+// 	    			var returnCode = data.result.resultCode;
+// 	    			if (returnCode != '1') {
+// 	    				var resultMsg = data.result.msg;
+// 	    				if (returnCode == '-1') {
+// 	    					resultMsg = '請檢查文件類型。';
+// 	    				}
+// 	    				alert("["+ returnCode +"] " + resultMsg);
+// 	    				$("#inquiryFile" + fileIdx).focus();
+// 	    			}
 	    		}
 	    	});
 	    }

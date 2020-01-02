@@ -13,6 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.BeanNameViewResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
@@ -20,17 +21,6 @@ import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 @EnableWebMvc
 @Configuration
 public class WebConfig implements WebMvcConfigurer{
-	
-	// jsonView 사용_begin
-	@Bean
-	public MappingJackson2JsonView jsonView() {
-		MappingJackson2JsonView mj2jv = new MappingJackson2JsonView();
-		mj2jv.setContentType("application/json;charset=UTF-8");
-		return mj2jv;
-	}
-	
-	// jsonView 사용_finish
-	
 	
 	// tiles 사용_begin
 	@Bean
@@ -40,12 +30,32 @@ public class WebConfig implements WebMvcConfigurer{
 		tilesConfigurer.setCheckRefresh(true);
 		return tilesConfigurer;
 	}
+	
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		TilesViewResolver viewResolver = new TilesViewResolver();
 		registry.viewResolver(viewResolver);
+		registry.order(1);
 	}
 	// tiles 사용_finish
+	
+//	@Bean
+//	public InternalResourceViewResolver internalViewResolver() {
+//		InternalResourceViewResolver internalResourceViewResolver = 
+//				new InternalResourceViewResolver();
+//		internalResourceViewResolver.setPrefix(prefix);
+//		internalResourceViewResolver.setOrder(2);
+//		return internalResourceViewResolver;
+//	}
+	
+	// jsonView 사용_begin
+	@Bean
+	public MappingJackson2JsonView jsonView() {
+		MappingJackson2JsonView mj2jv = new MappingJackson2JsonView();
+		mj2jv.setContentType("application/json;charset=UTF-8");
+		return mj2jv;
+	}
+	// jsonView 사용_finish
 	
 	
 	// message properties_begin
