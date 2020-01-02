@@ -148,7 +148,6 @@ body {
 				url : "/Index/Member/LoginJSON?"+query,
 				type : "POST",
 				success : function(data) {
-					console.log(data.jsonObject)
 					if(data.jsonObject.returnCode == 1) {
 						console.log("login success")
 					} else {

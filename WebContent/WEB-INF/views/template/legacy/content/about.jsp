@@ -22,7 +22,8 @@
 				<div class="text text-center">
 					<span class="subheading">file upload test</span>
 					<form action="/Index/Content/WriteJSON/Test" id="fileUploadForm" name="fileUploadForm" enctype="multipart/form-data">
-						<input type="file" name="fileUpload">
+						<input type="file" id="fileUpload1" name="fileUpload">
+						<input type="file" id="fileUpload2" name="fileUpload">
 						<input type="submit" name="submitBtn" value="전송">
 					</form>
 				</div>
@@ -89,41 +90,67 @@
 </section>
 
 <script>
+
+    
+	$(function() {
+		function validateFile(fileObj) {
+	    	var extension = fileObj.name.toLowerCase().substring(fileObj.name.lastIndexOf('.') + 1);
+	    	var allowExt = ['jpg', 'gif', 'png', 'txt', 'log', 'docx', 'doc', 'pdf'];
+	    	
+	    	if (fileObj.size > 3145728) {	// CHECK FILE SIZE
+	    		alert('請檢查文件大小（3MB）。');
+	    		return false;
+	    	}
+	    	
+	    	if($.inArray(extension, allowExt) < 0) { // CHECK FILE EXTENSION
+	    		alert('請檢查文件類型。');
+	    		return false;
+	    	} 	
+	    	return true;
+		}
+
 	    function uploadFile(event, fileIdx) {	
 	    	event.stopPropagation();
 	    	event.preventDefault();
 
 	    	var formData = new FormData();
 			var files = event.target.files;
- 			
+				
 			$.each(files, function(key, value){
- 				formData.append(key, value);
-			});			
+					formData.append(key, value);
+			});
+			
 	    	$.ajax({
-	    		url 		: '/common/fileupload.json',
+	    		url 		: '/utils/fileupload',
 	    		method 		: 'post',
 	    	    contentType	: false,
 	    		data 		: formData,
 	    		processData	: false,
 	    		success 	: function (data, textStatus, jqXhr) {
 	    			var errorString = JSON.stringify(jqXhr.responseText);
-	    			$("#attachFilePath" + fileIdx).val((data.result.resultCode == '1') ? data.result.fileName : "");
+// 	    			$("#attachFilePath" + fileIdx).val((data.result.resultCode == '1') ? data.result.fileName : "");
 	    			var returnCode = data.result.resultCode;
 	    			if (returnCode != '1') {
 	    				var resultMsg = data.result.msg;
 	    				if (returnCode == '-1') {
 	    					resultMsg = '請檢查文件類型。';
-	    				} if (returnCode == '-2') {
-	    					resultMsg = '請檢查文件大小（3MB）。';
-	    				} else if (returnCode == '-3') {
-	    					resultMsg = '請檢查文件是否正常。';
-	    				} else if (returnCode == '-4') {
-	    					resultMsg = '文件檢查未成功。';
-	    				} 
+	    				}
 	    				alert("["+ returnCode +"] " + resultMsg);
 	    				$("#inquiryFile" + fileIdx).focus();
 	    			}
 	    		}
 	    	});
 	    }
+		
+		$("input[name=fileUpload]").on("change", function(event) {
+			console.log(this.files)
+			if(this.files[0] != undefined && this.files[0] != '' && this.files[0] != null) {
+				if(validateFile(this.files[0])) {
+		    		uploadFile(event, 1);
+				} else {
+					$(this).val('');
+				}
+			}
+		})
+	})
 </script>
