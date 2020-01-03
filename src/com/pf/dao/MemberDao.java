@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class MemberDao {
 	public Map<String, Object> testDao() {
-		Map<String, Object> returnObj = new HashMap<String, Object>();
+		Map<String, Object> returnObj = new HashMap<>();
 		returnObj.put("returnCode", "1");
 		returnObj.put("returnMsg", "success");
 		return returnObj;
