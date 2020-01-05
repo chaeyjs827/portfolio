@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 @Transactional
 @Repository
 public class MemberDao {
-	public Map<String, Object> testDao() {
+	public Map<String, Object> memberLogin() {
 		Map<String, Object> returnObj = new HashMap<>();
 		returnObj.put("returnCode", "1");
 		returnObj.put("returnMsg", "login_success");

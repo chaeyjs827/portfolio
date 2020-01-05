@@ -89,7 +89,7 @@ public class MemberController extends Member {
 		JSONObject jsonObject = new JSONObject();
 		
 		if(returnCode == 1) {
-			returnObj = memberSao.testSao();
+			returnObj = memberSao.memberLogin(userID, userPW);
 			jsonObject.put("returnCode", returnObj.get("returnCode"));
 			jsonObject.put("returnMsg", returnObj.get("returnMsg"));
 		} else {
