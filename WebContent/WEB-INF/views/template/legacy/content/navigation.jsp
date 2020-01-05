@@ -125,6 +125,7 @@ body {
 		<h1>Login</h1>
 		<label for="email"><b>User ID</b></label> <input type="text" placeholder="Enter User ID" name="userID" required> 
 		<label for="psw"><b>Password</b></label> <input type="password" placeholder="Enter Password" name="userPW" required>
+		<button id="createSubmit" type="button" class="btn">Create</button>
 		<button id="loginSubmit" type="button" class="btn">Login</button>
 		<button type="button" class="btn cancel" onclick="loginDivBtn()">Close</button>
 	</form>
@@ -148,12 +149,29 @@ body {
 				url : "/Index/Member/LoginJSON?"+query,
 				type : "POST",
 				success : function(data) {
+					console.log(data)
 					if(data.jsonObject.returnCode == 1) {
 						console.log("login success")
 					} else {
 						console.log("login failed")
 					}
 				}
+			})
+		})
+		$("#createSubmit").on("click", function() {
+			var query = $("#loginForm").serialize()
+			$.ajax({
+				url : "/Index/Member/CreateJSON?"+query,
+				type : "POST",
+				success : function(data) {
+					console.log(data)
+					if(data.jsonObject.returnCode == 1) {
+						console.log("create success")
+					} else {
+						console.log("create failed")
+					}
+				}
+				
 			})
 		})
 	})

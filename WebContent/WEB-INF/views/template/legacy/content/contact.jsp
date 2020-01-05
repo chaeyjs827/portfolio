@@ -6,7 +6,8 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p>I have stayed in 3 countries(South Korea, Australia, Taiwan)</p>
+            <p>I can work in any countries if i can be offered a Visa sponsorship.</p>
           </div>
         </div>
 
@@ -17,8 +18,8 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<div>
-	          		<h3 class="mb-4">Address</h3>
-		            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+	          		<h3 class="mb-4">LinkedIn</h3>
+		            <p><a href="https://www.linkedin.com/in/youngjun-chae-0946a2160/">Jun's Linkedin</a></p>
 		          </div>
 	          </div>
           </div>
@@ -29,7 +30,8 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Contact Number</h3>
-		            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+		            <p><a href="tel://821058010403">Korea : (+82)1058010403</a></p>
+		            <p><a href="tel://886917099095">Taiwan : (+886)917099095</a></p>
 	            </div>
 	          </div>
           </div>
@@ -40,7 +42,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+		            <p><a href="mailto:chaeyjs827@gmail.com">chaeyjs827@gmail.com</a></p>
 		          </div>
 	          </div>
           </div>
@@ -51,7 +53,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Website</h3>
-		            <p><a href="#">yoursite.com</a></p>
+		            <p><a href="https://gabrielyj.tistory.com/" target="_blank">Jun's blog</a></p>
 	            </div>
 	          </div>
           </div>

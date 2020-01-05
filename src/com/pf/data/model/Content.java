@@ -17,6 +17,8 @@ public class Content {
 	String contents;
 	String subContents;
 	
+	String filePath;
+	
 	String projectName;
 	Date beginDate;
 	Date finishedDate;

@@ -8,7 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = {"/index", "/Index"})
 public abstract class Member {
 	
+	@RequestMapping(value = {"/Member/CreateJSON"})
+	public abstract ModelAndView CreateJSON(HttpServletRequest request) throws Exception;
+	
 	@RequestMapping(value ={"/Member/LoginJSON"})
 	public abstract ModelAndView LoginJSON(HttpServletRequest request) throws Exception;
+	
 	
 }

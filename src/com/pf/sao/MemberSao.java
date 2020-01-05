@@ -13,8 +13,13 @@ public class MemberSao {
 	@Autowired
 	MemberDao memberDao;
 	
-	public Map<String, Object> testSao() {
-		Map<String, Object> returnObj = memberDao.testDao();
+	public Map<String, Object> memberCreate(String userID, String userPW) {
+		Map<String, Object> returnObj = memberDao.memberCreate();
+		return returnObj;
+	}
+	
+	public Map<String, Object> memberLogin(String userID, String userPW) {
+		Map<String, Object> returnObj = memberDao.memberLogin();
 		return returnObj;
 	}
 	
