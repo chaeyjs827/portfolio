@@ -80,7 +80,7 @@ public class UtilsController extends Utils {
 	         
 	                //file upload
 	                if(StringUtils.isNotEmpty(fileName) && returnCode == 1) {
-	                	String path = "/testDir";
+	                	String path = "";
 	                	String userNo = "123123";
 	    				String filename = String.format("%s%s", path, userNo+"_"+multipartFile.getOriginalFilename());
 
@@ -89,12 +89,12 @@ public class UtilsController extends Utils {
 	                    UtilsFTPUploader ftpUploader = null;
 	                    File tempFileNeedUpload = null;
 	                    try {
-	                    	ftpUploader = new UtilsFTPUploader("ftp://localhost", 21, "Jun_FTP", "dudwns12");
+	                    	ftpUploader = new UtilsFTPUploader("localhost", 21, "Jun_FTP", "1234");
 //	                    	ftpUploader = new UtilsFTPUploader("ftp://::1", 21, "Jun_FTP", "dudwns12");
 //	                    	ftpUploader = new UtilsFTPUploader("ftp://127.0.0.0/8", 21, "Jun_FTP", "dudwns12");
 	                    	tempFileNeedUpload = UtilFileupload.multipartToFile(multipartFile);
 		                    System.out.println("tempFileNeedUpload : " + tempFileNeedUpload);
-		                    ftpUploader.uploadFile(tempFileNeedUpload, attachFilePaths, "/service/customer/");
+		                    ftpUploader.uploadFile(tempFileNeedUpload, attachFilePaths, "/test/");
 		                    System.out.println("finish fileupload >> ");
 	                    } catch(Exception e) {
 							// TODO Auto-generated catch block
