@@ -11,7 +11,9 @@ import org.apache.tika.metadata.Metadata;
 //import org.apache.tika.Tika;
 import org.springframework.web.multipart.MultipartFile;
 
-public class UtilFileupload {
+import com.pf.config.ProjectConstants;
+
+public class UtilFileupload extends ProjectConstants {
 	/**
 	 *
 	 * @param multipart
