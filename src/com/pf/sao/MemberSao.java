@@ -5,10 +5,11 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.pf.config.ProjectConstants;
 import com.pf.dao.MemberDao;
 
 @Service
-public class MemberSao {
+public class MemberSao extends ProjectConstants {
 
 	@Autowired
 	MemberDao memberDao;

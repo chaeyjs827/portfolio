@@ -9,7 +9,9 @@ import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;
 
-public class UtilsFTPUploader {
+import com.pf.config.ProjectConstants;
+
+public class UtilsFTPUploader extends ProjectConstants {
 	   FTPClient ftp = null;
 
 	    public UtilsFTPUploader(String host, int port, String user, String pwd) throws Exception{

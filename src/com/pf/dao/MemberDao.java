@@ -7,9 +7,11 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
+import com.pf.config.ProjectConstants;
+
 @Transactional
 @Repository
-public class MemberDao {
+public class MemberDao extends ProjectConstants {
 	public Map<String, Object> memberLogin() {
 		Map<String, Object> returnObj = new HashMap<>();
 		returnObj.put("returnCode", "1");
