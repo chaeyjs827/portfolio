@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.pf.config.ProjectConstants;
+
 @RequestMapping(value = {"/Index", "/index"})
-public abstract class Content {
+public abstract class Content extends ProjectConstants {
 
 	@RequestMapping(value = {"/Content/List"})
 	public abstract ModelAndView contentList(HttpServletRequest request);

@@ -9,22 +9,37 @@
 			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 				<div class="text text-center">
 					<span class="subheading">Hey! Wandering world </span>
-					<span class="subheading"><spring:message code="site.test"/></span>
 					<h1>Young-Jun CHAE</h1>
 <!-- 					<h1>&nbsp;&nbsp;채&nbsp;&nbsp;&nbsp;&nbsp;영&nbsp;&nbsp;&nbsp;&nbsp;준 </h1> -->
 <!-- 					<h1>&nbsp;&nbsp;蔡&nbsp;&nbsp;&nbsp;&nbsp;榮&nbsp;&nbsp;&nbsp;&nbsp;俊</h1> -->
 				</div>
 			</div>
+			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+				<div class="text text-center">
+					<span class="subheading">message properties test</span>
+					<span class="subheading"><spring:message code="site.test"/></span>
+				</div>
+				<div class="text text-center">
+					<span class="subheading">file upload test</span>
+					<form action="/Index/Content/WriteJSON/Test" id="fileUploadForm" name="fileUploadForm" enctype="multipart/form-data">
+						<input type="file" id="fileUpload1" name="fileUpload">
+						<input type="file" id="fileUpload2" name="fileUpload">
+						<input type="submit" name="submitBtn" value="전송">
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+			</div>
 		</div>
 	</div>
 	</div>
-	<div class="mouse">
-		<a href="#" class="mouse-icon">
-			<div class="mouse-wheel">
-				<span class="ion-ios-arrow-round-down"></span>
-			</div>
-		</a>
-	</div>
+<!-- 	<div class="mouse"> -->
+<!-- 		<a href="#" class="mouse-icon"> -->
+<!-- 			<div class="mouse-wheel"> -->
+<!-- 				<span class="ion-ios-arrow-round-down"></span> -->
+<!-- 			</div> -->
+<!-- 		</a> -->
+<!-- 	</div> -->
 </section>
 <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
 	id="about-section">
@@ -73,3 +88,72 @@
 		</div>
 	</div>
 </section>
+
+<script>
+
+    
+	$(function() {
+		function validateFile(fileObj) {
+	    	var extension = fileObj.name.toLowerCase().substring(fileObj.name.lastIndexOf('.') + 1);
+	    	var allowExt = ['jpg', 'gif', 'png', 'txt', 'log', 'docx', 'doc', 'pdf'];
+	    	
+	    	if (fileObj.size > 3145728) {	// CHECK FILE SIZE
+	    		alert('請檢查文件大小（3MB）。');
+	    		return false;
+	    	}
+	    	
+	    	if($.inArray(extension, allowExt) < 0) { // CHECK FILE EXTENSION
+	    		alert('請檢查文件類型。');
+	    		return false;
+	    	} 	
+	    	return true;
+		}
+
+	    function uploadFile(event, fileIdx) {	
+	    	event.stopPropagation();
+	    	event.preventDefault();
+
+	    	var formData = new FormData();
+			var files = event.target.files;
+				
+			$.each(files, function(key, value){
+					formData.append(key, value);
+			});
+			
+			console.log(formData)
+			
+	    	$.ajax({
+	    		url 		: '/utils/fileupload.json',
+	    		method 		: 'post',
+	    	    contentType	: false,
+	    		data 		: formData,
+	    		processData	: false,
+	    		success 	: function (data, textStatus, jqXhr) {
+	    			console.log(data)
+	    			var errorString = JSON.stringify(jqXhr.responseText);
+// 	    			$("#attachFilePath" + fileIdx).val((data.result.resultCode == '1') ? data.result.fileName : "");
+// 	    			var returnCode = data.result.resultCode;
+// 	    			if (returnCode != '1') {
+// 	    				var resultMsg = data.result.msg;
+// 	    				if (returnCode == '-1') {
+// 	    					resultMsg = '請檢查文件類型。';
+// 	    				}
+// 	    				alert("["+ returnCode +"] " + resultMsg);
+// 	    				$("#inquiryFile" + fileIdx).focus();
+// 	    			}
+	    		}
+	    	});
+	    }
+		
+		$("input[name=fileUpload]").on("change", function(event) {
+			console.log(this.files)
+			if(this.files[0] != undefined && this.files[0] != '' && this.files[0] != null) {
+				if(validateFile(this.files[0])) {
+		    		uploadFile(event, 1);
+				} else {
+					$(this).val('');
+				}
+			}
+		})
+	})
+</script>

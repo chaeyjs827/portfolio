@@ -1,10 +1,13 @@
 package com.pf.controller;
 
+import java.util.Iterator;
+
 import javax.servlet.http.HttpServletRequest;
 
-import org.json.simple.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -25,6 +28,20 @@ public class ContentController extends Content{
 	
 	@Override
 	public ModelAndView contentWriteJSON(@PathVariable String contentName, HttpServletRequest request) {
+//		MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
+//		Iterator<String> iterator = multipartHttpServletRequest.getFileNames();
+//		MultipartFile multipartFile = null;
+//		while(iterator.hasNext()) {
+//			multipartFile = multipartHttpServletRequest.getFile(iterator.next());
+//			if(multipartFile.isEmpty() == false) {
+//				System.out.println("------------- file start -------------");
+//				System.out.println("name : "+multipartFile.getName());
+//				System.out.println("filename : "+multipartFile.getOriginalFilename());
+//				System.out.println("size : "+multipartFile.getSize());
+//				System.out.println("-------------- file end --------------\n");
+//			}
+//		}
+		
 		ModelAndView mav = new ModelAndView("jsonView");
 		mav.addObject("contentName", contentName);
 		return mav;

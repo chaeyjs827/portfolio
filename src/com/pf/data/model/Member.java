@@ -17,7 +17,27 @@ import lombok.Data;
 @Data
 @Entity
 public class Member {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long userId; 
 	
+	private String userNickname;
+	private String userEmail;
+	private String userType;
+	private String createdIp;
+	private String lastUpdatedIp;
+	private String thumnail;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdTime = new Date();
+	private Date lastUpdatedTime;
+	
+	private Date lastLoginTime;
+
+	// db에는 맵핑 하지 않음(칼럼 생성 안 함)
+	@Transient
+	private String checkSum;
 	public Long getUserId() {
 		return userId;
 	}
@@ -105,26 +125,5 @@ public class Member {
 	public void setCheckSum(String checkSum) {
 		this.checkSum = checkSum;
 	}
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long userId; 
-	
-	private String userNickname;
-	private String userEmail;
-	private String userType;
-	private String createdIp;
-	private String lastUpdatedIp;
-	private String thumnail;
-	
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date createdTime = new Date();
-	private Date lastUpdatedTime;
-	
-	private Date lastLoginTime;
-
-	// db에는 맵핑 하지 않음(칼럼 생성 안 함)
-	@Transient
-	private String checkSum;
 	
 }
