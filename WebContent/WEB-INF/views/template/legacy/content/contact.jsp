@@ -6,8 +6,6 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
-            <p>I have stayed in 3 countries(South Korea, Australia, Taiwan)</p>
-            <p>I can work in any countries if i can be offered a Visa sponsorship.</p>
           </div>
         </div>
 
