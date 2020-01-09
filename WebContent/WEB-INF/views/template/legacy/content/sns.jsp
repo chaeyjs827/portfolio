@@ -5,59 +5,55 @@
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">Our Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h2 class="mb-3">STAYED TO WORK</h2>
+			<p>I have stayed in 3 countries(Taiwan, Australia, South Korea) <br/> I can work in any countries if i can be offered a Visa sponsorship by you :) </p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('/resources/images/image_1.jpg');">
+              <a href="javascript:void(0);" class="block-20" style="background-image: url('/resources/images/flag_tw.png');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="javascript:void(0);">Taiwan</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
-	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<span class="mr-2">Sep.2019 ~ current</span>
+	                	<a href="#" class="mr-2">(+16 months)</a>
 	                </p>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>Stayed in Taiwan<br/>Working as an IT programmer<br/>Working Permit(Visa)</p> 
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('/resources/images/image_2.jpg');">
+              <a href="javascript:void(0);" class="block-20" style="background-image: url('/resources/images/flag_aus.png');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="javascript:void(0);">Australia</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
-	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<span class="mr-2">June.2016 ~ Sep.2017</span>
+	                	<a href="#" class="mr-2">(16 months)</a>
 	                </p>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>Stayed in Australia<br/> purpose to study English<br/>Working Holiday(Visa) </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('/resources/images/image_3.jpg');">
+          	<div class="blog-entry justify-content-end">
+              <a href="javascript:void(0);" class="block-20" style="background-image: url('/resources/images/flag_kr.png');">
               </a>
               <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <h3 class="heading"><a href="javascript:void(0);">South Korea</a></h3>
                 <div class="d-flex align-items-center mb-3 meta">
 	                <p class="mb-0">
-	                	<span class="mr-2">Sept. 12, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                	<span class="mr-2">Korean Native</span>
 	                </p>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>Stayed in Taiwan<br/>Working as an IT programmer</p>
               </div>
             </div>
           </div>
