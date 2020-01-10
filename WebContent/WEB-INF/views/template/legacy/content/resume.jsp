@@ -7,9 +7,10 @@
 				    <nav id="navi">
 					    <ul>
 					      <li><a href="#page-1">Education</a></li>
-					      <li><a href="#page-2">Experience</a></li>
-					      <li><a href="#page-3">Skills</a></li>
-					      <li><a href="#page-4">Awards</a></li>
+					      <li><a href="#page-2">Sub Education</a></li>
+					      <li><a href="#page-3">Experience</a></li>
+					      <li><a href="#page-4">Skills</a></li>
+					      <li><a href="#page-5">Awards</a></li>
 					    </ul>
 					  </nav>
 					</div>
@@ -21,10 +22,9 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Bachelor of Science in Computer Science</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="date">2016-2017</span>
+		    					<h2>Academic Credit Bank System</h2>
+		    					<span class="position">Bachelor's Degree - Computer Science</span>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -32,37 +32,49 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Computer Processing Systems/Computer Software</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Diploma in Computer</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Art &amp; Creative Director</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="date">2011-2016</span>
+		    					<h2>Dongseoul College</h2>
+		    					<span class="position">Associate's Degree - Computer Software</span>
 		    				</div>
 	    				</div>
 					  </div>
+					  <div id="page-2" class= "page one">
+					  	<h2 class="heading">Sub Education</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Sep.2017-Mar.2018</span>
+		    					<h2>NCS Digital Conversions</h2>
+		    					<span class="position">Software Engineering based Java(Spring)</span>
+	    					</div>
+	    				</div>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Mar.2017-Jun.2017</span>
+		    					<h2>Short-term(10w) English </h2>
+		    					<span class="position">General English Course in Australian Pacific College</span>
+		    					<span class="position">Upper Intermediate Level</span>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Jan.2015</span>
+		    					<h2>Short-term(4w) English </h2>
+		    					<span class="position">General English Course in Newcastle University</span>
+		    					<span class="position">Intermediate Level</span>
+	    					</div>
+	    				</div>
+					  </div>
 
-					  <div id="page-2" class= "page two">
+					  <div id="page-3" class= "page two">
 					  	<h2 class="heading">Experience</h2>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
@@ -131,7 +143,7 @@
 		    				</div>
 	    				</div>
 					  </div>
-					  <div id="page-3" class= "page three">
+					  <div id="page-4" class= "page three">
 					  	<h2 class="heading">Skills</h2>
 					  	<div class="row progress-circle mb-5">
 					  		<div class="col-lg-4 mb-4">
@@ -296,7 +308,7 @@
 								</div>
 					  	</div>
 					  </div>
-					  <div id="page-4" class= "page four">
+					  <div id="page-5" class= "page four">
 					    <h2 class="heading">Awards</h2>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
