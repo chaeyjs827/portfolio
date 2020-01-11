@@ -56,7 +56,7 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Mar.2017-Jun.2017</span>
-		    					<h2>Short-term(10w) English </h2>
+		    					<h2>Short-term(10w) English Studying in Australia</h2>
 		    					<span class="position">General English Course in Australian Pacific College</span>
 		    					<span class="position">Upper Intermediate Level</span>
 	    					</div>
@@ -67,7 +67,7 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Jan.2015</span>
-		    					<h2>Short-term(4w) English </h2>
+		    					<h2>Short-term(4w) English Studying in Australia</h2>
 		    					<span class="position">General English Course in Newcastle University</span>
 		    					<span class="position">Intermediate Level</span>
 	    					</div>
@@ -81,9 +81,9 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Software Developer</h2>
-		    					<span class="position">Cambridge University</span>
+		    					<span class="date">Sep.2015-Apr.2016</span>
+		    					<h2>Frontend Developer</h2>
+		    					<span class="position">Gcensoft.Inc</span>
 		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 		    				</div>
 	    				</div>
@@ -92,53 +92,9 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Web Designer</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Web Marketing</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Art &amp; Creative Director</h2>
-		    					<span class="position">Side Tech</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Wordpress Developer</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2017-2018</span>
-		    					<h2>UI/UX Designer</h2>
-		    					<span class="position">Cambridge University</span>
+		    					<span class="date">Sep.2018-present</span>
+		    					<h2>Fullstack Developer</h2>
+		    					<span class="position">HAPPYTUK Co., Ltd</span>
 		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 		    				</div>
 	    				</div>
