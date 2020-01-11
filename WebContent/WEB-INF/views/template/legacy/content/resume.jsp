@@ -10,7 +10,7 @@
 					      <li><a href="#page-2">Sub Education</a></li>
 					      <li><a href="#page-3">Experience</a></li>
 					      <li><a href="#page-4">Skills</a></li>
-					      <li><a href="#page-5">Awards</a></li>
+					      <li><a href="#page-5">Licenses</a></li>
 					    </ul>
 					  </nav>
 					</div>
@@ -55,9 +55,9 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">Mar.2017-Jun.2017</span>
+		    					<span class="date">Mar.2017-June.2017</span>
 		    					<h2>Short-term(10w) English Studying in Australia</h2>
-		    					<span class="position">General English Course in Australian Pacific College</span>
+		    					<span class="position">General English Course in Australian Pacific College</span><br/>
 		    					<span class="position">Upper Intermediate Level</span>
 	    					</div>
 	    				</div>
@@ -68,7 +68,7 @@
 					    	<div class="text pl-3">
 		    					<span class="date">Jan.2015</span>
 		    					<h2>Short-term(4w) English Studying in Australia</h2>
-		    					<span class="position">General English Course in Newcastle University</span>
+		    					<span class="position">General English Course in Newcastle University</span><br/>
 		    					<span class="position">Intermediate Level</span>
 	    					</div>
 	    				</div>
@@ -76,6 +76,18 @@
 
 					  <div id="page-3" class= "page two">
 					  	<h2 class="heading">Experience</h2>
+    					<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Sep.2018-present</span>
+		    					<h2>Fullstack Developer</h2>
+		    					<span class="position">HAPPYTUK Co., Ltd</span>
+		    					<p>The company publishes Korean games in Taiwan, Japan and Thailand. I am working in the Development Team of Platform Department as a Fullstack Developer. 
+		    					I develop and maintain game websites, back-office, Payment Gateway platforms (PG), games patch supporting, data exports, FTP servers and trouble-shooting.</p>
+		    				</div>
+	    				</div>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
 					    		<span class="flaticon-ideas"></span>
@@ -84,20 +96,10 @@
 		    					<span class="date">Sep.2015-Apr.2016</span>
 		    					<h2>Frontend Developer</h2>
 		    					<span class="position">Gcensoft.Inc</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<p>The company creates map platforms and engines for National Intelligence Service,Navigation for Firefighter air troop and some corporations for delivery service </p>
 		    				</div>
 	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Sep.2018-present</span>
-		    					<h2>Fullstack Developer</h2>
-		    					<span class="position">HAPPYTUK Co., Ltd</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
+
 					  </div>
 					  <div id="page-4" class= "page three">
 					  	<h2 class="heading">Skills</h2>
@@ -265,16 +267,15 @@
 					  	</div>
 					  </div>
 					  <div id="page-5" class= "page four">
-					    <h2 class="heading">Awards</h2>
+					    <h2 class="heading">Licenses</h2>
 					    <div class="resume-wrap d-flex ftco-animate">
 					    	<div class="icon d-flex align-items-center justify-content-center">
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Top 10 Web Developer</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		    					<span class="date">May.2018</span>
+		    					<h2>Engineer Information Processing(National technique qualification)</h2>
+		    					<span class="position">Human Resources Development Service of Korea</span>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -282,33 +283,20 @@
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Top 5 LeaderShip Exellence Winner</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
+		    					<span class="date">May.2016</span>
+		    					<h2>Industrial Engineer Information Processing(National technique qualification)</h2>
+		    					<span class="position">Human Resources Development Service of Korea</span>
+	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
 	    					<div class="icon d-flex align-items-center justify-content-center">
 					    		<span class="flaticon-ideas"></span>
 					    	</div>
 					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Top 4 Web Tester</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Art &amp; Creative Director</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
+		    					<span class="date">Aug.2011</span>
+		    					<h2>Driving License(applicable for international license)</h2>
+		    					<span class="position">Kyungkido Provincial Police Agency</span>
+	    					</div>
 	    				</div>
 					  </div>
 					</div>
