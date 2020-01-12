@@ -13,14 +13,20 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.BeanNameViewResolver;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
+import com.pf.interceptor.MainInterceptor;
+
 @EnableWebMvc
 @Configuration
 public class WebConfig implements WebMvcConfigurer{
+	
+	@Bean
+	MainInterceptor mainInterceptor() {
+		return new MainInterceptor();
+	}
 	
 	// tiles 사용_begin
 	@Bean
@@ -84,6 +90,7 @@ public class WebConfig implements WebMvcConfigurer{
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(localeChangeInterceptor());
+		registry.addInterceptor(mainInterceptor());
 	}
 	// message properties_finish
 
