@@ -68,7 +68,7 @@ public class WebConfig implements WebMvcConfigurer{
 	}
 	// 변경된 언어 정보를 기억할 로케일 리졸버 생성, 세션에 저장
 	@Bean
-	public SessionLocaleResolver localResolver() {
+	public SessionLocaleResolver localeResolver() {
 		return new SessionLocaleResolver();
 	}
 	// 언어 변경을 위한 인터셉터

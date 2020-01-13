@@ -22,6 +22,8 @@
 				<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 				<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Oversea</span></a></li>
 				<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				<li class="nav-item"><a href="?lang=kr" class="nav-link"><span>Korean</span></a></li>
+				<li class="nav-item"><a href="?lang=en" class="nav-link"><span>English</span></a></li>
 				<li class="nav-item"><a id="navLoginBtn" href="#" class="nav-link" onclick="loginDivBtn()"><span>Login</span></a></li>
 			</ul>
 		</div>
