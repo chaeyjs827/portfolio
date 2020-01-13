@@ -44,16 +44,7 @@ public class WebConfig implements WebMvcConfigurer{
 		registry.order(1);
 	}
 	// tiles 사용_finish
-	
-//	@Bean
-//	public InternalResourceViewResolver internalViewResolver() {
-//		InternalResourceViewResolver internalResourceViewResolver = 
-//				new InternalResourceViewResolver();
-//		internalResourceViewResolver.setPrefix(prefix);
-//		internalResourceViewResolver.setOrder(2);
-//		return internalResourceViewResolver;
-//	}
-	
+
 	// jsonView 사용_begin
 	@Bean
 	public MappingJackson2JsonView jsonView() {
@@ -87,11 +78,6 @@ public class WebConfig implements WebMvcConfigurer{
 		interceptor.setParamName("lang");
 		return interceptor;
 	}
-	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(localeChangeInterceptor());
-		registry.addInterceptor(mainInterceptor());
-	}
 	// message properties_finish
 
 	
@@ -106,6 +92,13 @@ public class WebConfig implements WebMvcConfigurer{
 		return cmr;
 	}
 	// fileupload_finish
+	
+	// 인터셉터 등록
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(localeChangeInterceptor());
+		registry.addInterceptor(mainInterceptor());
+	}
 	
 	@Bean
 	public ViewResolver viewResolver() {
