@@ -33,13 +33,15 @@ public class MainController extends Main {
 	public ModelAndView indexMain(HttpServletRequest request, Locale locale) {
 		ModelAndView mav = new ModelAndView("legacyIndexMain");
 		Locale.setDefault(new Locale("en", "EN"));
-		System.out.println("clientLocale : " + locale);
-		System.out.println("sessionLocale : " + localeResolver.resolveLocale(request));
+		System.out.println("[clientLocale] : " + locale);
+		System.out.println("[sessionLocale] : " + localeResolver.resolveLocale(request));
 		
-		logger.info("logger info");
-		logger.warn("logger warn");
-		logger.error("logger error");
-		logger.debug("logger debug");
+		
+		
+		logger.info("[logger info]");
+		logger.warn("[logger warn]");
+		logger.error("[logger error]");
+		logger.debug("[logger debug]");
 		
 //		memberSao.testSao();
 		return mav;
