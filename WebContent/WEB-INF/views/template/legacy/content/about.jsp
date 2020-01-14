@@ -8,23 +8,20 @@
 			class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 				<div class="text text-center">
-					<span class="subheading"><spring:message code="about.intro.title"/></span>
+					<span class="subheading"><spring:message code="about.intro.title1"/></span>
+					<h5><spring:message code="about.intro.title2"/></h5>
+					<h5><spring:message code="about.intro.title3"/></h5>
+					<h5><spring:message code="about.intro.title4"/></h5>
+					<h5><spring:message code="about.intro.title5"/></h5>
+					<h5><spring:message code="about.intro.title6"/></h5>
+					<h5><spring:message code="about.intro.title7"/></h5>
 					<h1>Young-Jun CHAE</h1>
-					<!-- 					<h1>&nbsp;&nbsp;채&nbsp;&nbsp;&nbsp;&nbsp;영&nbsp;&nbsp;&nbsp;&nbsp;준 </h1> -->
-					<!-- 					<h1>&nbsp;&nbsp;蔡&nbsp;&nbsp;&nbsp;&nbsp;榮&nbsp;&nbsp;&nbsp;&nbsp;俊</h1> -->
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 			</div>
 		</div>
 	</div>
-	<!-- 	<div class="mouse"> -->
-	<!-- 		<a href="#" class="mouse-icon"> -->
-	<!-- 			<div class="mouse-wheel"> -->
-	<!-- 				<span class="ion-ios-arrow-round-down"></span> -->
-	<!-- 			</div> -->
-	<!-- 		</a> -->
-	<!-- 	</div> -->
 </section>
 <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
 	id="about-section">
@@ -33,9 +30,9 @@
 			<div class="col-md-6 col-lg-6 d-flex">
 				<div class="img-about img d-flex align-items-stretch">
 					<div class="overlay"></div>
-					<!-- 					<div class="img d-flex align-self-stretch align-items-center" -->
-					<!-- 						style="background-image: url(/resources/images/about.jpg);"> -->
-					<!-- 					</div> -->
+					<div class="img d-flex align-self-stretch align-items-center"
+						style="background-image: url(/resources/images/jun.jpg);">
+					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
@@ -57,8 +54,7 @@
 				<div class="counter-wrap ftco-animate d-flex mt-md-3">
 					<div class="text">
 						<p class="mb-4">
-							<span class="number" data-number="10">0</span> <span>Project
-								complete</span>
+							<span class="number" data-number="10">0</span> <span>Project complete</span>
 						</p>
 						<p>
 							<a href="#" class="btn btn-primary py-3 px-3">Download CV</a>
