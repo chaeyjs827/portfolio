@@ -58,7 +58,7 @@
 					<div class="col-md-12 heading-section ftco-animate">
 						<h1 class="big">About</h1>
 						<h2 class="mb-4">About Me</h2>
-						<p>I am Jun who strives and works to become a Fullstack developer</p>
+						<p>I am Jun who strives and works to become a senior Fullstack developer</p>
 						<ul class="about-info mt-4 px-md-0 px-2">
 							<li class="d-flex"><span>Name:</span> <span>CHAE Young-Jun (채영준)</span></li>
 							<li class="d-flex"><span>Date of birth:</span> <span>August 27, 1992</span></li>

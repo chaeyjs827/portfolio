@@ -102,7 +102,7 @@
 
 					  </div>
 					  <div id="page-4" class= "page three">
-					  	<h2 class="heading">Skills</h2>
+					  	<h2 class="heading">Main Skill Stacks</h2>
 					  	<div class="row progress-circle mb-5">
 					  		<div class="col-lg-4 mb-4">
 						      <div class="bg-white rounded-lg shadow p-4">
@@ -161,8 +161,13 @@
 						      </div>
 						    </div>
 					  	</div>
-    					<h2>Sub Skills</h2>
+    					<h2>Other Skill Stacks</h2>
 					  	<div class="row">
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">JPA</h3>
+								</div>
+							</div>
 					  		<div class="col-md-4 animate-box">
 								<div class="progress-wrap ftco-animate">
 									<h3 style="font-weight:bold">Groovy</h3>
@@ -171,6 +176,16 @@
 					  		<div class="col-md-4 animate-box">
 								<div class="progress-wrap ftco-animate">
 									<h3 style="font-weight:bold">Grails</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Windows</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Linux&CentOS</h3>
 								</div>
 							</div>
 					  		<div class="col-md-4 animate-box">
@@ -190,12 +205,37 @@
 							</div>
 					  		<div class="col-md-4 animate-box">
 								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">JSTL</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">JSP</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">MS Azure</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Jenkins</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
 									<h3 style="font-weight:bold">Memcached</h3>
 								</div>
 							</div>
 					  		<div class="col-md-4 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3 style="font-weight:bold">Git/Mercurial</h3>
+									<h3 style="font-weight:bold">Cloudflare</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Git&Mercurial</h3>
 								</div>
 							</div>
 					  		<div class="col-md-4 animate-box">
@@ -205,7 +245,7 @@
 							</div>
 					  		<div class="col-md-4 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3 style="font-weight:bold">Memcached</h3>
+									<h3 style="font-weight:bold">log4j&logback</h3>
 								</div>
 							</div>
 					  		<div class="col-md-4 animate-box">
@@ -220,7 +260,22 @@
 							</div>
 					  		<div class="col-md-4 animate-box">
 								<div class="progress-wrap ftco-animate">
-									<h3 style="font-weight:bold">Memcached</h3>
+									<h3 style="font-weight:bold">bootstrap</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Google recaptcha</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Google GIS api</h3>
+								</div>
+							</div>
+					  		<div class="col-md-4 animate-box">
+								<div class="progress-wrap ftco-animate">
+									<h3 style="font-weight:bold">Openlayers3 api</h3>
 								</div>
 							</div>
 					  	</div>
