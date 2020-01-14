@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
     <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
     	<div class="container">
     		<div class="row">
@@ -23,8 +24,8 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">2016-2017</span>
-		    					<h2>Academic Credit Bank System</h2>
-		    					<span class="position">Bachelor's Degree - Computer Science</span>
+		    					<h2><spring:message code="resume.edu.bank.name"/></h2>
+		    					<span class="position"><spring:message code="resume.edu.bank.major"/></span>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -33,8 +34,8 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">2011-2016</span>
-		    					<h2>Dongseoul College</h2>
-		    					<span class="position">Associate's Degree - Computer Software</span>
+		    					<h2><spring:message code="resume.edu.dsu.name"/></h2>
+		    					<span class="position"><spring:message code="resume.edu.dsu.major"/></span>
 		    				</div>
 	    				</div>
 					  </div>
@@ -46,8 +47,8 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Sep.2017-Mar.2018</span>
-		    					<h2>NCS Digital Conversions</h2>
-		    					<span class="position">Software Engineering based Java(Spring)</span>
+		    					<h2><spring:message code="resume.subEdu.ncs.name"/></h2>
+		    					<span class="position"><spring:message code="resume.subEdu.ncs.detail"/></span>
 	    					</div>
 	    				</div>
 					    <div class="resume-wrap d-flex ftco-animate">
@@ -56,9 +57,9 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Mar.2017-June.2017</span>
-		    					<h2>Short-term(10w) English Studying in Australia</h2>
-		    					<span class="position">General English Course in Australian Pacific College</span><br/>
-		    					<span class="position">Upper Intermediate Level</span>
+		    					<h2><spring:message code="resume.subEdu.sl1.name"/></h2>
+		    					<span class="position"><spring:message code="resume.subEdu.sl1.detail1"/></span><br/>
+		    					<span class="position"><spring:message code="resume.subEdu.sl1.detail2"/></span>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -67,9 +68,9 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Jan.2015</span>
-		    					<h2>Short-term(4w) English Studying in Australia</h2>
-		    					<span class="position">General English Course in Newcastle University</span><br/>
-		    					<span class="position">Intermediate Level</span>
+		    					<h2><spring:message code="resume.subEdu.sl2.name"/></h2>
+		    					<span class="position"><spring:message code="resume.subEdu.sl2.detail1"/></span><br/>
+		    					<span class="position"><spring:message code="resume.subEdu.sl2.detail2"/></span>
 	    					</div>
 	    				</div>
 					  </div>
@@ -82,10 +83,9 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Sep.2018-present</span>
-		    					<h2>Fullstack Developer</h2>
-		    					<span class="position">HAPPYTUK Co., Ltd</span>
-		    					<p>The company publishes Korean games in Taiwan, Japan and Thailand. I am working in the Development Team of Platform Department as a Fullstack Developer. 
-		    					I develop and maintain game websites, back-office, Payment Gateway platforms (PG), games patch supporting, data exports, FTP servers and trouble-shooting.</p>
+		    					<h2><spring:message code="resume.exe1.jobTitle"/></h2>
+		    					<span class="position"><spring:message code="resume.exe1.companyName"/></span>
+		    					<p><spring:message code="resume.exe1.detail"/></p>
 		    				</div>
 	    				</div>
 					    <div class="resume-wrap d-flex ftco-animate">
@@ -94,9 +94,9 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Sep.2015-Apr.2016</span>
-		    					<h2>Frontend Developer</h2>
-		    					<span class="position">Gcensoft.Inc</span>
-		    					<p>The company creates map platforms and engines for National Intelligence Service,Navigation for Firefighter air troop and some corporations for delivery service </p>
+		    					<h2><spring:message code="resume.exe2.jobTitle"/></h2>
+		    					<span class="position"><spring:message code="resume.exe2.companyName"/></span>
+		    					<p><spring:message code="resume.exe2.detail"/></p>
 		    				</div>
 	    				</div>
 
@@ -288,8 +288,8 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">May.2018</span>
-		    					<h2>Engineer Information Processing(National technique qualification)</h2>
-		    					<span class="position">Human Resources Development Service of Korea</span>
+		    					<h2><spring:message code="resume.license1.name"/></h2>
+		    					<span class="position"><spring:message code="resume.license1.issuer"/></span>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -298,8 +298,8 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">May.2016</span>
-		    					<h2>Industrial Engineer Information Processing(National technique qualification)</h2>
-		    					<span class="position">Human Resources Development Service of Korea</span>
+		    					<h2><spring:message code="resume.license2.name"/></h2>
+		    					<span class="position"><spring:message code="resume.license2.issuer"/></span>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -308,8 +308,8 @@
 					    	</div>
 					    	<div class="text pl-3">
 		    					<span class="date">Aug.2011</span>
-		    					<h2>Driving License(applicable for international license)</h2>
-		    					<span class="position">Kyungkido Provincial Police Agency</span>
+		    					<h2><spring:message code="resume.license3.name"/></h2>
+		    					<span class="position"><spring:message code="resume.license3.issuer"/></span>
 	    					</div>
 	    				</div>
 					  </div>
