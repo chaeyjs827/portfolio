@@ -48,6 +48,8 @@
 							<li class="d-flex"><span><spring:message code="about.me.phone"/>:</span> <span><spring:message code="about.me.phoneAns"/></span></li>
 							<li class="d-flex"><span><spring:message code="about.me.criminal"/>:</span> <span><spring:message code="about.me.criminalAns"/></span></li>
 							<li class="d-flex"><span><spring:message code="about.me.disability"/>:</span> <span><spring:message code="about.me.disabilityAns"/></span></li>
+							<li class="d-flex"><span><spring:message code="about.me.abroad"/>:</span> <span><spring:message code="about.me.abroadAns"/></span></li>
+							<li class="d-flex"><span><spring:message code="about.me.language"/>:</span> <span><spring:message code="about.me.languageAns"/></span></li>
 						</ul>
 					</div>
 				</div>
@@ -57,7 +59,7 @@
 							<span class="number" data-number="10">0</span> <span>Project complete</span>
 						</p>
 						<p>
-							<a href="#" class="btn btn-primary py-3 px-3">Download CV</a>
+							<a href="javascript:alert('resume is being preparing')" class="btn btn-primary py-3 px-3">Download CV</a>
 						</p>
 					</div>
 				</div>
