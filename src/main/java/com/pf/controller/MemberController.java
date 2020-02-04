@@ -3,6 +3,7 @@ package com.pf.controller;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang.StringUtils;
 import org.json.simple.JSONObject;
@@ -65,7 +66,13 @@ public class MemberController extends Member {
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	public ModelAndView LoginJSON(HttpServletRequest request) throws Exception {
+	public ModelAndView LoginJSON(HttpSession session, HttpServletRequest request) throws Exception {
+		String returnUrl = "";
+		
+		if(session.getAttribute("login") != null) {
+			session.removeAttribute("login");
+		}
+		
 		Integer returnCode = 1;
 		String returnMsg = null;
 		String userID = request.getParameter("userID");

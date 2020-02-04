@@ -145,6 +145,12 @@
 		</dependency>
 		<!-- Tika_begin -->
 
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-tomcat</artifactId>
+         <scope>provided</scope>
+      </dependency>
+
 		<!-- 2019.12.17 이후_end -->
 	</dependencies>
 

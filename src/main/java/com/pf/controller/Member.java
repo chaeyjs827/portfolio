@@ -1,6 +1,7 @@
 package com.pf.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +15,7 @@ public abstract class Member extends ProjectConstants {
 	public abstract ModelAndView CreateJSON(HttpServletRequest request) throws Exception;
 	
 	@RequestMapping(value ={"/Member/LoginJSON"})
-	public abstract ModelAndView LoginJSON(HttpServletRequest request) throws Exception;
+	public abstract ModelAndView LoginJSON(HttpSession session, HttpServletRequest request) throws Exception;
 	
 	
 }
