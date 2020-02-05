@@ -25,6 +25,9 @@ public class Member {
 	private String userId;
 	private String userPw;
 	
+	private String sessionkey;
+	private Date sessionlimit;
+	
 	
 //	@Id
 //	@GeneratedValue(strategy=GenerationType.AUTO)

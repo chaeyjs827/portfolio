@@ -17,5 +17,7 @@ public abstract class Member extends ProjectConstants {
 	@RequestMapping(value ={"/Member/LoginJSON"})
 	public abstract ModelAndView LoginJSON(HttpSession session, HttpServletRequest request) throws Exception;
 	
+	@RequestMapping(value = {"/Member/LogoutJSON"})
+	public abstract ModelAndView LogoutJSON(HttpSession session) throws Exception;
 	
 }

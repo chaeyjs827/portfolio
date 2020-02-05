@@ -78,6 +78,8 @@ public class MemberController extends Member {
 		String userID = request.getParameter("userID");
 		String userPW = request.getParameter("userPW");
 
+		// 임시 고정 ID & PW
+		
 		if(returnCode == 1) {
 			if(StringUtils.isEmpty(userID)) {
 				returnCode = 10001;
@@ -108,6 +110,14 @@ public class MemberController extends Member {
 		
 		ModelAndView mav = new ModelAndView("jsonView");
 		mav.addObject("jsonObject", jsonObject);
+		return mav;
+	}
+	
+	@Override
+	public ModelAndView LogoutJSON(HttpSession session) throws Exception {
+		ModelAndView mav = new ModelAndView("redirect:/Index/Main");
+		session.invalidate();
+		session.removeAttribute("login");
 		return mav;
 	}
 	

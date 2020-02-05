@@ -39,6 +39,11 @@ public class MainController extends Main {
 		logger.error("[logger error]");
 		logger.debug("[logger debug]");
 		
+		// 임시
+//		mav.addObject("sessionStatus", "login");
+		mav.addObject("sessionStatus", "logout");
+		// 임시
+		
 		return mav;
 	}
 	

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <nav
 	class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
 	id="ftco-navbar">
@@ -24,7 +26,15 @@
 				<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				<li class="nav-item"><a href="?lang=kr" class="nav-link"><span>Korean</span></a></li>
 				<li class="nav-item"><a href="?lang=en" class="nav-link"><span>English</span></a></li>
-				<li class="nav-item"><a id="navLoginBtn" href="#" class="nav-link" onclick="loginDivBtn()"><span>Login</span></a></li>
+				<c:choose>
+					<c:when test="${sessionStatus eq 'login'}">
+						<li class="nav-item"><a id="navLogoutBtn" href="/Index/Member/LogoutJSON" class="nav-link" onclick="logout()"><span>Logout</span></a></li>
+					</c:when>
+					<c:otherwise>
+						<li class="nav-item"><a id="navLoginBtn" href="#" class="nav-link" onclick="loginDivBtn()"><span>Login</span></a></li>
+					</c:otherwise>
+				</c:choose>
+				
 			</ul>
 		</div>
 	</div>
