@@ -78,8 +78,6 @@ public class MemberController extends Member {
 		String userID = request.getParameter("userID");
 		String userPW = request.getParameter("userPW");
 
-		// 임시 고정 ID & PW
-		
 		if(returnCode == 1) {
 			if(StringUtils.isEmpty(userID)) {
 				returnCode = 10001;
