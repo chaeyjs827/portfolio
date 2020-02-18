@@ -22,6 +22,18 @@ public class ContentDao extends ProjectConstants {
 	public List<Map<String,Object>> getPortfolioList() {
 		List<Map<String,Object>> portfolioList = new ArrayList<>();
 //		portfolioList.
+		//
+//		Member member = new Member();
+//		member.findById("chaeyjs827");
+//		
+//		Session session = entityManager.unwrap(Session.class);
+//		session.save(member);
+		
+//		Member member = new Member();
+//		member.setUserNickname("sleepy");
+//		
+//		Session session = entityManager.unwrap(Session.class);
+//		session.save(member);
 		return portfolioList;
 	}
 	
